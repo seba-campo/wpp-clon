@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    transition: 0.3s
+}
+
+body{
+    margin: 0;
+}
+
+/*  Móviles: entre 320 y 480 píxeles.
+    Tablets: entre 768 y 1024 píxeles.
+    Pantallas grandes: más de 1200 píxeles.
+*/
+
+/* PAGE */
+.main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Assistant', sans-serif;
+}
+
+/* TOPBAR */
+.main__topbar{ 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    height: 5vh;
+}
+.topbar__brand{
+    margin: 3px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topbar__title{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.topbar__icons{
+    width: 120px;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+/* GRUPO CHATS Y CONTAINER */
+.main__group{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+    .main__group{
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+.main__chatlist{
+    background-color: #272727;
+    height: 6vh;
+    display: flex;
+    color: white
+}
+@media (min-width: 768px){
+    .main__chatlist{
+        flex-direction: column;
+        height: 95vh;
+        width: 25vw;
+    }
+}
+
+.main__container{
+    height: 89vh;
+}
+@media (min-width: 768px){
+    .main__container{
+        height: 95vh;
+        width: 75vw;
+    }
+}

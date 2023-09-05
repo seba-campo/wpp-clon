@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whastapp (1)</title>
+    <!-- FA -->
+    <script src="https://kit.fontawesome.com/a2c645680e.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="./index.ts"></script>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="main__topbar">
+            <div class="topbar__brand">
+                <i class="fa-brands fa-speakap fa-lg" style="color: #48c156;"></i>
+                <h2 class="topbar__title">SebaApp</h2>
+            </div>
+            <div class="topbar__icons">
+                <div class="icons__minimize">
+                    <i class="fa-solid fa-window-minimize" style="color: #ffffff;"></i>
+                </div>
+                <div class="icons__maximize">
+                    <i class="fa-regular fa-square" style="color: #ffffff;"></i>
+                </div>
+                <div class="icons__close">
+                    <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group for layouts -->
+        <div class="main__group">
+            <div class="main__chatlist">
+                <!-- Chats -->
+                <chat-card></chat-card>
+                <chat-card></chat-card>
+                <chat-card></chat-card>
+                <chat-card></chat-card>
+            </div>
+            <div class="main__container">
+                <!-- Aca van componentes -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

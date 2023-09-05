@@ -1,0 +1,13 @@
+{
+  "name": "wpp-clon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "parcel": "^2.9.3"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html"
+  }
+}
