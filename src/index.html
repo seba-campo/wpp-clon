@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whastapp (1)</title>
     <!-- FA -->
-    <script src="https://kit.fontawesome.com/a2c645680e.js" crossorigin="anonymous"></script>
+    <link href="./assets/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome-free-6.4.2-web/css/solid.css" rel="stylesheet">
 
     <script type="module" src="./index.ts"></script>
 
@@ -33,15 +35,75 @@
         </div>
 
         <!-- Group for layouts -->
+        
         <div class="main__group">
-            <div class="main__chatlist">
-                <!-- Chats -->
-                <chat-card></chat-card>
-                <chat-card></chat-card>
-                <chat-card></chat-card>
-                <chat-card></chat-card>
+            <div class="main__controls">
+                <div class="controls__icons">
+                    <div class="control-icon">
+                        <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="control-icon">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="control-icon">
+                        <i class="fa-solid fa-code-branch" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="controls__icons">
+                    <div class="control-icon">
+                        <i class="fa-regular fa-star" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="control-icon">
+                        <i class="fa-solid fa-box-archive" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="control-icon">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </div>
+                </div>
             </div>
+            
+            <div class="main__chatlist">
+                <!-- Titulo -->
+                <div class="chatlist__title">
+                    <h2 class="chat__title">Chats</h2>
+
+                    <div class="chatlist__icons">
+                        <i class="fa-regular fa-pen-to-square" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-filter" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+
+                <!-- Input Search -->
+
+                <div class="chatlist__input-search">
+                    <input class="input-search" type="text" placeholder="Busca un chat o inicia uno nuevo... ">
+                </div>
+                
+
+                <!-- Chats -->
+                <chat-card title="Sobre Mi"></chat-card>
+                <chat-card title="Experiencias"></chat-card>
+                <chat-card title="Trabajos"></chat-card>
+                <chat-card title="Contacto"></chat-card>
+            </div>
+
             <div class="main__container">
+                <div class="chat-header">
+                    <chat-header class="chat-header-el"></chat-header>
+                    
+                    <div class="header-controls">
+                        <div class="control-icon">
+                            <i class="fa-solid fa-video" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="control-icon">
+                            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="control-icon">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Aca van componentes -->
             </div>
         </div>

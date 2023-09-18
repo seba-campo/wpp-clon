@@ -1,5 +1,11 @@
+import "./pages/about"
+import "./pages/experiencies"
+import "./pages/works"
+import "./pages/contact"
+
+
 import "./components/chatCard"
-import "./components/about"
+import "./components/chatHeader"
 import "./router"
 
 (()=>{
