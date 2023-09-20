@@ -1,6 +1,7 @@
 export const state = {
     data: {
-        actualTabHeader : "Sobre mí"
+        actualTabHeader : "Sobre mí",
+        deployed: false,
     },
     listeners: [],
     subscribe(cb: (any) => any) {
@@ -9,6 +10,11 @@ export const state = {
     },
     getState() {
         return this.data;
+    },
+    setDeployedStatus(status: boolean){
+        const cs = this.getState();
+        cs.deployed = status;
+        this.setState(cs);
     },
     setHeader(value: string){
         const cs = this.getState()

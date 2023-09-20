@@ -31,25 +31,46 @@ class ChatCard extends HTMLElement {
         }
 
         this.addEventListener("click", ()=>{
-
-
-            switch(cardTitle){
-                case "Sobre Mi": 
-                    Router.go("/");
-                    state.setHeader("Sobre mí");
-                    break
-                case "Experiencias": 
-                    Router.go("/experiences");
-                    state.setHeader("Experiencias");
-                    break
-                case "Trabajos": 
-                    Router.go("/works");
-                    state.setHeader("Trabajos");
-                    break
-                case "Contacto": 
-                    Router.go("/contact");
-                    state.setHeader("Contacto");
-                    break
+            const cs = state.getState();
+            if(cs.deployed){
+                switch(cardTitle){
+                    case "Sobre Mi": 
+                        Router.go("/wpp-clon/about");
+                        state.setHeader("Sobre mí");
+                        break
+                    case "Experiencias": 
+                        Router.go("/wpp-clon/experiences");
+                        state.setHeader("Experiencias");
+                        break
+                    case "Trabajos": 
+                        Router.go("/wpp-clon/works");
+                        state.setHeader("Trabajos");
+                        break
+                    case "Contacto": 
+                        Router.go("/wpp-clon/contact");
+                        state.setHeader("Contacto");
+                        break
+                }
+            }
+            if(!cs.deployed){
+                switch(cardTitle){
+                    case "Sobre Mi": 
+                        Router.go("/about");
+                        state.setHeader("Sobre mí");
+                        break
+                    case "Experiencias": 
+                        Router.go("/experiences");
+                        state.setHeader("Experiencias");
+                        break
+                    case "Trabajos": 
+                        Router.go("/works");
+                        state.setHeader("Trabajos");
+                        break
+                    case "Contacto": 
+                        Router.go("/contact");
+                        state.setHeader("Contacto");
+                        break
+                }
             }
         })
 

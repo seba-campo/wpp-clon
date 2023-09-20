@@ -2,6 +2,7 @@ import "./pages/about"
 import "./pages/experiencies"
 import "./pages/works"
 import "./pages/contact"
+import "./pages/home"
 
 
 import "./components/chatCard"

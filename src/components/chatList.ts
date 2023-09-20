@@ -17,7 +17,7 @@ class ChatList extends HTMLElement {
 
       const style = document.createElement("style");
       style.textContent = `
-      
+        
       `;
 
       this.shadow.appendChild(style);

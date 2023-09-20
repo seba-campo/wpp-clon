@@ -29,22 +29,21 @@ class ChatHeader extends HTMLElement {
         }
 
         this.shadow.innerHTML = `
-      <div class="header">
-        <div class="chat-image">
-            
-        </div>
-        <div class="header-info">
-            <div>
-                <h3 class="chat-title">${this.headerTitle}</h3>
+            <div class="header">
+                <div class="chat-image">
+                    
+                </div>
+                <div class="header-info">
+                    <div>
+                        <h3 class="chat-title">${this.headerTitle}</h3>
+                    </div>
+                    <div>
+                        <p class="chat-status">En linea</p>
+                    </div>    
+                </div>
             </div>
-            <div>
-                <p class="chat-status">En linea</p>
-            </div>    
-        </div>
-      </div>
       `;
 
-      
       style.textContent = `
         .header{
             display: flex; 
@@ -74,7 +73,6 @@ class ChatHeader extends HTMLElement {
             margin: 0px 4px;
             font-weight: 300;
         }
-
       `;
 
       this.shadow.appendChild(style);
