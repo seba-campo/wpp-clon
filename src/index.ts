@@ -13,6 +13,7 @@ import { state } from "./state"
 import { Router } from "@vaadin/router" 
 
 (()=>{
+    state.init();
 
     document.addEventListener("keydown", (e) => {
         const cs = state.getState();
@@ -40,6 +41,5 @@ import { Router } from "@vaadin/router"
                 break
         };
     })
-    console.log("Index HOLA")
 }
 )()

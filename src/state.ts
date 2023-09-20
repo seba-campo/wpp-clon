@@ -4,6 +4,18 @@ export const state = {
         deployed: false,
     },
     listeners: [],
+    init(){
+        const cs = this.getState();
+        const actualUrl = window.location.origin;
+
+        if(actualUrl.startsWith("http://localhost")){
+            cs.deployed = false;
+        }else{
+            cs.deployed = true;
+        }
+
+        this.setState(cs)
+    },
     subscribe(cb: (any) => any) {
         // recibe callbacks para ser avisados posteriormente
         this.listeners.push(cb);

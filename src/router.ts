@@ -17,7 +17,7 @@ if(actualUrl.startsWith("http://localhost")){
 else{
   state.setDeployedStatus(true);
   router.setRoutes([
-    {path: '/wpp-clon/', component: 'about-page'},
+    {path: '/wpp-clon/', component: 'home-page'},
     {path: '/wpp-clon/about', component: 'about-page'}, 
     {path: '/wpp-clon/experiences', component: 'exp-page'},
     {path: '/wpp-clon/works', component: 'works-page'},
