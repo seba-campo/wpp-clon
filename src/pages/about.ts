@@ -7,6 +7,9 @@ class AboutPage extends HTMLElement {
     connectedCallback() {
     }
     render() {
+      const chatHeaderEl = document.querySelector(".chat-header") as HTMLElement;
+      chatHeaderEl.style.display = "flex";
+
       const backgroundChatImg = require("../assets/img/bg-chat.png");
       const profileImg = require("../assets/img/profile.png");
       const guitarImg = require("../assets/img/seba-guitar.png");

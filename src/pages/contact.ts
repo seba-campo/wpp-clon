@@ -7,12 +7,16 @@ class ContactPage extends HTMLElement {
     connectedCallback() {
     }
     render() {
+      const chatHeaderEl = document.querySelector(".chat-header") as HTMLElement;
+      chatHeaderEl.style.display = "flex";
+      
       const backgroundChatImg = require("../assets/img/bg-chat.png");
+      const underConstruction = require("../assets/img/under-construction.png");
       
         this.shadow.innerHTML = `
       <div class="chat-root-div">
-        <div class="chat-root-div__title-div">
-          <h1 class="chat-root-div__tile-h1">Contact</h1>  
+        <div class="image-div">
+          <img class="image" src=${underConstruction}>
         </div>
       </div>
       `;
@@ -61,7 +65,7 @@ class ContactPage extends HTMLElement {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        opacity: 0.25;
+        opacity: 0.1;
       }
       @media (min-width: 768px){
         .chat-root-div::before{
@@ -70,6 +74,16 @@ class ContactPage extends HTMLElement {
           background-size: contain;
           background-repeat: repeat;
         }
+      }
+
+      .image-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%
+      }
+      .image{
+        height: 50vh;
       }
       `;
 

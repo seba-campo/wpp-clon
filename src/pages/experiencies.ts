@@ -7,6 +7,9 @@ class Experiences extends HTMLElement {
     connectedCallback() {
     }
     render() {
+      const chatHeaderEl = document.querySelector(".chat-header") as HTMLElement;
+      chatHeaderEl.style.display = "flex";
+      
       const backgroundChatImg = require("../assets/img/bg-chat.png");
       
         this.shadow.innerHTML = `
