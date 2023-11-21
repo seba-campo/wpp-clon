@@ -40,4 +40,29 @@ export const state = {
             cb(cs);
         }
     },
+    sendMail(address: any, callback, err){
+        var validAddress = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (address.match(validAddress)) {
+            console.log("Enviando correo a: " + address)
+            
+            fetch("https://mailer-api-qfoh.onrender.com/mail?mail="+address,{
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                  }
+            })
+            .then((res)=>{
+                if(res.status == 200){
+                    console.log("Correo enviado correctamente :)")
+                    callback()
+                }
+                else {
+                    err()
+                }
+            })
+
+        } else {    
+            alert("Invalid email address!");
+        }
+    }
 };
