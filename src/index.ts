@@ -15,6 +15,18 @@ import { Router } from "@vaadin/router"
 (()=>{
     state.init();
 
+    function spinup(){
+        fetch("https://mailer-api-qfoh.onrender.com/",{
+                method: "GET",
+                headers: {
+                    'Content-Type': 'application/json'
+                  }
+            })
+    };
+
+    spinup();
+    setInterval(spinup, 840000)
+
     document.addEventListener("keydown", (e) => {
         const cs = state.getState();
         if (e.key == "Escape"){
