@@ -21,6 +21,27 @@ class Experiences extends HTMLElement {
           </div>
 
           <div class="message-title">
+            <p class="message-title-p center"><strong>Teleoperador Soporte Técnico</strong></p>
+          </div>
+          <div class="message-title">
+            <p class="message-title-p center"><a href="https://www.contactcom.com.ar/" target="_blank">Contactcom SA</a></p>
+          </div>
+          <div class="message-title">
+            <p class="message-title-p center">Enero 2024 - Presente</p>
+          </div>
+          <div class="message-description">
+            <p class="message-description-p">Operador telefónico de soporte técnico para gran empresa proveedora de internet, telefonía y televisión residencial.
+              Brindo soporte de primera línea, y contención del cliente en aspectos técnicos y comerciales. Info detallada del puesto 👉 <a href="https://www.linkedin.com/in/seba-campo" target="_blank">acá</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="message-head">
+            <img class="head-img" src=>
+          </div>
+
+          <div class="message-title">
             <p class="message-title-p center"><strong>Desarrollador Front-end</strong></p>
           </div>
           <div class="message-title">
@@ -53,9 +74,7 @@ class Experiences extends HTMLElement {
           </div>
           <div class="message-description">
             <p class="message-description-p">Brindé soporte de nivel 1, 2 y 3 a sistemas de diseño y producción de amoblamientos.
-              <br>
               Entre mis tareas realizaba también implementaciones, análisis de errores y dictaba capacitaciones a nuevos clientes.
-              <br>
               Los detalles técncios del puesto lo podrás encontrar <a href="https://www.linkedin.com/in/seba-campo" target="_blank">acá</a>
             </p>
           </div>

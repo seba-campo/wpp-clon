@@ -33,9 +33,11 @@ class AboutPage extends HTMLElement {
             <p class="message-description-p">Tengo 24 años, me encanta la <strong>música🎶</strong> y la <strong>tecnología🖥️</strong>. He estudiado en ambas orientaciones desde que terminé el secundario.</p>
 
           </div>
+          <!--
           <div class="image-guitar-div">
             <img class="guitar-img" src=${guitarImg}>
           </div>
+          -->
           <div class="message-description">
             <p class="message-description-p space">Estudié cuatro años en el Instituto superior de música José Hernandez 🎶, especializándome en piano 🎹. Por cuestiones personales no pude seguir, pero estoy tramitando el re-ingreso para este 2024!.
               De todas maneras, durante los años que no cursé hice música y seguí mejorando mi técnica y conocimiento.
