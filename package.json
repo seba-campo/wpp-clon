@@ -7,13 +7,13 @@
     "@vaadin/router": "^1.7.5",
     "cosmiconfig": "8.2.0",
     "gh-pages": "^6.0.0",
-    "parcel": "^2.9.3",
-    "typescript": "^5.3.3"
+    "parcel": "^2.9.3"
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
     "build": "parcel build ./src/index.html --dist-dir build --public-url https://seba-campo.github.io/wpp-clon/",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "manual": "tsc ./src/index.ts --outDir ./manual"
   },
   "devDependencies": {
     "htmlnano": "2.0.3"
